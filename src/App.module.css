@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    position: absolute;
+    width: 736px;
+    height: 54px;
+    left: calc(50% - 736px/2);
+    top: 140px;
+}
+
+.container input {
+    width: 40rem;
+    height: 3.375rem;
+
+    color: var(--gray-100);
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    padding: 16px;
+    gap: 8px;
+
+}
+
+.container input:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--purple-dark);
+    
+}
+
+.container button {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
+
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    font-size: 14px;
+    border-radius: 8px;
+
+    width: 90px;
+    height: 52px;
+
+    border: none;
+
+}
+
+.container button:hover {
+    background: var(--blue);
+}
+
+.container button img {
+
+    left: 0.2%;
+    right: 0%;
+    top: 0%;
+    bottom: 0.2%;
+
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 736px;
+    height: 287px;
+    left: calc(50% - 736px/2);
+    top: 240px;
+}
+
+.tasks section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 736px;
+    height: 19px;
+
+    gap: 420px;
+}
+
+.tasks section article:nth-child(1) {
+    color: var(--blue);
+    font-weight: bold;
+    
+}
+
+.tasks section article:nth-child(2) {
+    color: var(--purple-dark);
+    font-weight: bold;
+}
+
+.tasks section p {
+    display: inline;
+    color: var(--gray-200);
+    background: var(--gray-400);
+    border-radius: 999px;
+    padding: 2px 8px;
+    gap: 10px;
+
+    width: 25px;
+    height: 19px;
+}
+
+.tasksdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 24px;
+    gap: 16px;
+
+    width: 736px;
+    height: 244px;
+
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    color: var(--gray-300);
+
+    visibility: visible;
+    
+
+}
+
+.messageTask {
+    visibility: hidden;
+
+}
+
+.tasks div p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.onTasks {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7.5rem;
+    gap: 10px;
+}
+
