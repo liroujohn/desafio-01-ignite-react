@@ -26,6 +26,11 @@ export function App() {
 
     // console.log(idRandom(999));
 
+    if(taskText === '') {
+      alert('Digite uma tarefa')
+      return
+    }
+
     const newTask = {
       id: idRandom(1000) + 1 ,
       nameTask: taskText,
@@ -63,13 +68,12 @@ export function App() {
       <Header />
       <div className={styles.container}>
         <input
-
           name='task'
           type="text" 
           placeholder="Adicione uma nova tarefa"
           value={taskText}
           onChange={newTackTextOnChange}
-
+          required
           />
         
           <button 
