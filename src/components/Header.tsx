@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 
-import rocketLogo from '../assets/logo-foguete.svg';
+import rocketLogo from '../assets/Logo-foguete.svg';
 
 export function Header() {
     return (
